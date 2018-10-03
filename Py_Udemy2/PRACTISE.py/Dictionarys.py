@@ -39,8 +39,55 @@ print(dic8)
 d= {'Audi' :'A4','benz':'A140','HONDA':'CRV'}
 def if_key_is_present (x):
     if x in d:
-        print('car is already present')
+        print('You won this car already !')
     else:
-        print('car is not present do you want to add')
+        print('car is not present do you want to buy it? ')
 if_key_is_present ('lexus')
 if_key_is_present ('HONDA')
+if_key_is_present('ROLLYCE')
+
+"""
+Write a Python program to iterate over dictionaries using for loops.
+"""
+d= {'x': 1,'Y':2,'Z':3}
+for dic_key, dic_value in d.items():
+   print (dic_key , '-->', dic_value)
+
+""" ******
+Write a Python script to generate and print a dictionary that contains a number (between 1 and n) in the form (x, x*x).
+Sample Dictionary ( n = 5) :
+Expected Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 25} 
+"""
+# n= int(input("INPUT a Number"))
+# d = dict()
+
+# for x in range (1,n+1):
+#     d[x] = x*x
+# print(d)
+
+"""
+Write a Python script to print a dictionary where the keys are numbers between 1 and 15 (both included) and the values are square of keys.
+Sample Dictionary 
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225}
+"""
+d= dict ()
+
+for x in range (1, 16):
+    d[x] = x*x
+print(d)
+
+"""
+Write a Python script to merge two Python dictionaries.
+"""
+d={'AUDI':'A4','HONDA':'4x4','BENZ':'A140'}
+e= {'Audi':'Automatic','Honda':'MANUAL','BENZ':'Manual'}
+z ={**d, **e}
+print(z)
+# OR # 
+z= d.copy()
+z.update(e)
+print(z)
+
+"""
+Write a Python program to iterate over dictionaries using for loops.
+"""
