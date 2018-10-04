@@ -56,17 +56,55 @@ print ("*"*20+ 'Solution 6:')
 Write a Python program which accepts a sequence of comma-separated numbers from user
 and generate a 'list' and a 'tuple' with those numbers
 """
-values = input("Input some comma seperated numbers: ")
-list = values.split ("_")    ## 'SPLIT()' METHOD RETURNS A LIST OF STRINGS AFTER BREAKING THE GIVEN STRING BY THE SPECIFIED SEPARATOR.
-tuple = tuple(list)
-print('List : ', list)
-print('Tuple : ',tuple)
+# values = input("Input some comma seperated numbers: ")
+# list = values.split ("_")    ## 'SPLIT()' METHOD RETURNS A LIST OF STRINGS AFTER BREAKING THE GIVEN STRING BY THE SPECIFIED SEPARATOR.
+# tuple = tuple(list)
+# print('List : ', list)
+# print('Tuple : ',tuple)
 
-print ("*"*20+ 'Solution 7:')
-"""7.
-Write a Python program to accept a filename from the user and print the extension of that
+# print ("*"*20+ 'Solution 7:')
+# """7.
+# Write a Python program to accept a filename from the user and print the extension of that
+# """
+# file_name = input (" Sample filename : ")
+# file_extension = file_name.split(".")
+# print (type(file_name))      ## THIS PRINTS OUT THE TYPE OF EXTENSION
+# print("The Extension of the file is : " + repr (file_extension[-1])) ## THIS WILL PRINT THE EXTENSION AFTER ' .'
+
+print ("*"*20+ 'Solution 8:')
+"""8.
+Write a Python program to display the first and last colors from the following list.
+color_list = ["Red","Green","White" ,"Black"]
 """
-file_name = input (" Sample filename : ")
-file_extension = file_name.split(".")
-print (type(file_name))      ## THIS PRINTS OUT THE TYPE OF EXTENSION
-print("The Extension of the file is : " + repr (file_extension[-1])) ## THIS WILL PRINT THE EXTENSION AFTER ' .'
+color_list = ["Red","Green","White" ,"Black"]
+print(color_list[0])
+print(color_list[3])
+
+print ("*"*20+ 'Solution 9:')
+"""9.
+Write a Python program to display the examination schedule. (extract the date from exam_st_date).
+exam_st_date = (11, 12, 2014)
+Sample Output : The examination will start from : 11 / 12 / 2014
+"""
+exam_st_date = (11, 12, 2014)
+print (" The examination will start from : %i/%i/%i"%exam_st_date)
+print("The Examination will start from : "  ,exam_st_date[0] ,'/',exam_st_date[1],'/',exam_st_date[2])
+
+print ("*"*20+ 'Solution 10:')
+"""10.
+Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
+Sample value of n is 5 
+Expected Result : 615
+"""
+n = input (" input a number : ")
+n=n
+nn=n*2
+nnn=n*3
+value= int(n)+int(nn)+int(nnn) 
+print('Result is :', value) 
+## OR ##
+a = int(input("Input an integer : "))
+n1 = int( "%s" % a )
+n2 = int( "%s%s" % (a,a) )
+n3 = int( "%s%s%s" % (a,a,a) )
+print (n1+n2+n3)

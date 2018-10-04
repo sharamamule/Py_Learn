@@ -54,7 +54,7 @@ cars.remove("SUZUKI")
 print(cars)
 
 ## SLICING a LIST
-slicing = cars[0:2] # this will get all the items of the list startionf form 1st index till END
+slicing = cars[0:2] # this will get all the items of the list starting form 1st index till END
 print(slicing)
 a= cars[1:]
 print(a)

@@ -29,3 +29,10 @@ file_name = input (" Sample filename : ")
 file_extension = file_name.split(".")
 print (type(file_name))      ## THIS PRINTS OUT THE TYPE OF EXTENSION
 print("The Extension of the file is : " + repr (file_extension[-1])) ## THIS WILL PRINT THE EXTENSION AFTER ' .'
+
+"""
+TO CHANGE THE STRING TO UPPER CLASS/LOWER CLASS
+"""
+S= " THIS IS A STRING"
+S.lower()
+S.Upper()
