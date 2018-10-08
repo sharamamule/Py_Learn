@@ -45,3 +45,47 @@ print(c2.make)
 #c2.info()
 
 print(Car.wheels)  ## THIS WAY WE NEED TO USE 'CLASS-NAME.MEMEBER-VARIABLE
+
+print("*"* 20)
+class Cycle(object):
+    def __init__(self,make,model,accessories):
+        self.make=make
+        self.model=model
+        self.accessories=accessories
+print("*"* 20)
+
+
+class BYKE(object):
+    def __init__(self,make,color):
+        self.make=make
+        self.color=color
+
+    def info(self):
+        print("Byke make is :"+ self.make)
+        print("Byke color is :"+ self.color)
+
+b2=BYKE('CBZ','Yellow')
+b2.info()
+print("*"* 20)
+
+class Movie(object):
+    def __init__(self,MovieName,LeadRole,Director,Music):
+        self.MovieName=MovieName
+        self.LeadRole=LeadRole
+        self.Director=Director
+        self.Music=Music
+    def info(self):
+        print ('My Favourite Movie name is :' + self.MovieName)
+        print ('My Favoyrite Lead Role is :' + self.LeadRole)
+        print('director was :'+ self.Director)
+        print('music director was :'+ self.Music)
+
+print("My Favourite Movie in Tollywood is : ")
+m1= Movie('Premadesam','Vineeth','Unknown','AR Rehman')
+m1.info()
+print("*"* 20)
+print("My Favourite Movie in Hollywood is : ")
+m2 =Movie('TITANIC','LEONARDO','JAMES CAMERON','Un-known')
+m2.info()
+print('I went to watch my Fav movie :')
+b2.info()

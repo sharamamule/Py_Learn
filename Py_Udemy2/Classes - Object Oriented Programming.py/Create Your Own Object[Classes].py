@@ -50,3 +50,4 @@ Asha = Amzon ('Avengers','OnceUPonAtime','Rhymes')
 print(Asha.Movies)
 print (Asha.Series)
 print(Asha.Cartoon)
+
