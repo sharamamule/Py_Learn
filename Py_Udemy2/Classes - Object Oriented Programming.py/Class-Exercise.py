@@ -58,3 +58,30 @@ m.fruit_taste()
 m.nutrition()
 m.fruit_shape()
 m.Availability()
+
+print("*"* 29)
+class Car(object):
+    def __init__(self):
+        print ("I am part of VW Group :")
+    def make(self):
+        print('I am AUDI : ')
+    def model(self):
+        print ('I am A4 model: ')
+    def transmission(self):
+        print('I can be automatic & manual: ')
+c=Car()
+c.model()
+c.make()
+c.transmission()
+
+print("*"* 29)
+class AudiA5(Car):
+    def __init__(self):
+        print ("I am Model A5 :")
+    def Engine(self):
+        print("I have powerful Engine:")
+C2=AudiA5()
+C2.Engine()
+C2.make()
+C2.transmission()
+
