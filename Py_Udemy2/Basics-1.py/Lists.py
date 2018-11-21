@@ -1,5 +1,8 @@
 """ 
-Lists & Accessing ELEMENTS
+Lists & Accessing ELEMENTS :
+A list is a container which holds comma separated values (items or elements) between square brackets where items or elements need not all have the same type. 
+In general, we can define a list as an object that contains multiple data items (elements). 
+The contents of a list can be changed during program execution. The size of a list can also change during execution, as elements are added or removed from it.
 """
 #List is a data type used to store more than one value in one VARIABLE NAME
 
@@ -51,7 +54,7 @@ cars.remove("SUZUKI")
 print(cars)
 
 ## SLICING a LIST
-slicing = cars[0:2] # this will get all the items of the list startionf form 1st index till END
+slicing = cars[0:2] # this will get all the items of the list starting form 1st index till END
 print(slicing)
 a= cars[1:]
 print(a)
