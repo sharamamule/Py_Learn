@@ -60,3 +60,7 @@ print(cars)
 cars.sort()
 print(cars)  # this will Sort the list alphabetically
 
+list_one = [1,2,3,4]
+list_two= list_one
+list_one.append(5)
+print(list_two)

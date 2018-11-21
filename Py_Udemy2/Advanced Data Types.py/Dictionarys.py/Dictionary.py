@@ -68,3 +68,5 @@ print(d)
 d.update({'Audi':'A4'})
 print(d)
 
+k={'pobey':'Alpha','Pulka':'Pusky'}
+print(k)
