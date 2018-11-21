@@ -1,4 +1,4 @@
-"""
+"""xqc
 File I/O
 'W' -> Write-Only Mode
 'r' -> Read-Only Mode
