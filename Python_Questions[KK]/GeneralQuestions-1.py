@@ -41,8 +41,7 @@ Ans: In python prgoramming, 'Pass' is a null statement.The difference between a 
 # Suppose we have a loop or a function that is not implemented yet, but we want to implement it in future.
 # They can not have an empty body. The interpreter would complain.
 # So, we use the 'pass' statement to construct a body that does nothing.
-# pass is just a placeholder for
-# functionality to be added later.
+# pass is just a placeholder for functionality to be added later.
 sequence = {'p', 'a', 's', 's'}
 for val in sequence:
     pass
@@ -132,12 +131,12 @@ if __name__ == "__main__":
     As a result if condition satisfies and "hello() " function gets called.
 """
 # Now create a new file called "using_module.py"  and write the following code
-import my_module
+# import my_module
  
-print(my_module.foo)
-my_module.hello()
+# print(my_module.foo)
+# my_module.hello()
  
-print(my_module.__name__)
+# print(my_module.__name__)
 """ OUT-PUT :
 100
 i am from my_module.py
