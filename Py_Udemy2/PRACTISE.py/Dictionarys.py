@@ -91,3 +91,8 @@ print(z)
 """
 Write a Python program to iterate over dictionaries using for loops.
 """
+
+x='XXX'
+withR= ("Prints with quotes: %r" %x)
+withS= ("Prints with quotes: %s" %s)
+print(withR)

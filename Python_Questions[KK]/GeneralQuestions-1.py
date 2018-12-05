@@ -6,7 +6,7 @@ Ans:   Arguments are passed neither by value and nor by reference in Python -
        as opposed to reference to a fixed memory location but the reference is passed by value.
        In addition, some data types (like strings, tuples etc) are immutable whereas others are mutable.
 """
-list_one = [1, 2, 3, 5]
+list_one = [1, 2, 3, 4]
 list_two = list_one
 list_one.append(5)
 print(list_two)
@@ -28,9 +28,11 @@ print(int_one)
 #The same thing is happening, but the object type makes a difference:
 # 1.You create an integer object with a value of 1. We’ll call this object ID 1. You then bind the name “int_one” to object ID 1.
 # 2.You tell it to bind “int_two” to the same object that “int_one”is pointing to. They’re both bound to object ID 1.
-# 3.You try to modify object ID 1, but it’s immutable, so you can’t change the content. Because of this, it looks at the value of object ID 1, adds 10 to it to get 11, and creates a new integer object (ID 2) with a value of 11. It then re-binds “int_two” to object ID 2, but leaves “int_one” alone.
+# 3.You try to modify object ID 1, but it’s immutable, so you can’t change the content. Because of this, it looks at the value of object ID 1, 
+# adds 10 to it to get 11, and creates a new integer object (ID 2) with a value of 11. It then re-binds “int_two” to object ID 2, but leaves “int_one” alone.
 # 4.Since “int_one” and “int_two” are now bound to different objects, printing them will give different results.
-# 5.If you were to change the value of “int_two” again, it would create a third object with the new value and leave the second object in memory with no bindings. Don’t worry about wasted memory, though. That’s what garbage collection is for
+# 5.If you were to change the value of “int_two” again, it would create a third object with the new value and leave the second object in memory with no bindings. 
+# Don’t worry about wasted memory, though. That’s what garbage collection is for.
 
 """
 4) Why is the “pass” keyword used for in Python?
@@ -76,7 +78,7 @@ Ans:  Python compiles the ".py" files and saves it as ".pyc" files ,
 """
 7) Explain how Python does Compile-time and Run-time code checking?
 Ans:  Python performs some amount of compile-time checking, 
-      but most of the checks such as type, name, etc are postponed until code execution. 
+      but most of the checks such as type, name, etc are postponed until "code execution". 
       Consequently, if the Python code references a user -defined function that does not exist,
       the code will compile successfully. In fact, the code will fail with an exception only when the code execution path references the function which does not exists.
       Examples of 'Compile time errors' -Syntax errors-Typechecking errors-Compiler crashes (Rarely)
@@ -106,7 +108,7 @@ Ans:  "setup.py" is a python file, which usually tells you that the module/packa
 
 """
 10) what is the use of __init__==__main__: condition in python?
-Ans:  In Python all modules have some built-in attributes. __name__ is one of them.
+Ans:  In Python all modules have some built-in attributes. "__name__" is one of them.
     --> Case 1: Running the module directly :
                 If you run the module directly in a standalone program then in that case the value of " __name__" attribute is set to "__main__"
     --> Case 2: Using the module with import :

@@ -2,7 +2,7 @@
 14) How will you set a global variable inside a function?
 Ans:   Global variable ; is accessible by any function  , 
        Any variable defined in the main body is global
-       Any variable defined in a function is locla to that function.
+       Any variable defined in a function is local to that function.
        To specify a defined variable as global inside a function, use the "global" statement.     
 """
 def myfun():
@@ -90,3 +90,45 @@ settings_globalVar1.myf()             # Call only once
 Importing_globalVar2.somefunc()        # Do stuff with global var
 print (settings_globalVar1.myList[0])  # Check the result
 """
+
+"""
+23) recursive functions? 
+ Ans:  We know that in Python, a function can call other functions. It is even possible for the function to call itself.
+       These type of construct are termed as "recursive functions"
+"""
+# Example of recursive function
+           #An example of recrusive function to find the factorial of a number.
+def cal_factorial(x):
+        """this is a recursive function to find the factorial of an integer"""
+        if x==1:
+           return 1
+        else:
+           return (x * cal_factorial(x-1))
+num=5
+print (" The Factorial of" , num, "is", cal_factorial(num))
+
+"""OUTPUT
+    "The Factorial of 5 is 120"  ## In the above example,"cal_factorial()" is a recrusive functions as it calls itself.
+      When we call this fucntion with a postive integer, it will recrusively call itself by decreasing the number.
+      Each function call multiples the number with the factorial of number 1 until the number is equal to one.
+calc_factorial(4)              # 1st call with 4
+4 * calc_factorial(3)          # 2nd call with 3
+4 * 3 * calc_factorial(2)      # 3rd call with 2
+4 * 3 * 2 * calc_factorial(1)  # 4th call with 1
+4 * 3 * 2 * 1                  # return from 4th call as number=1
+4 * 3 * 2                      # return from 3rd call
+4 * 6                          # return from 2nd call
+24                             # return from 1st call
+    ## Recursion ends when the number reduces to 1. This is called the base condition.
+       Every recursive function must have a base condition that stops the recursion or else the fucntion calls itself infinitely.
+##Advantages of Recursion
+        # Recursive functions make the code look clean and elegant.
+        # A complex task can be broken down into simpler sub-problems using recursion.
+        # Sequence generation is easier with recursion than using some nested iteration.
+##Disadvantages of Recursion
+        # Sometimes the logic behind recursion is hard to follow through.
+        # Recursive calls are expensive (inefficient) as they take up a lot of memory and time.
+        # Recursive functions are hard to debug.
+"""
+
+
