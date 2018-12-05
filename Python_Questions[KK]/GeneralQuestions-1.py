@@ -6,7 +6,7 @@ Ans:   Arguments are passed neither by value and nor by reference in Python -
        as opposed to reference to a fixed memory location but the reference is passed by value.
        In addition, some data types (like strings, tuples etc) are immutable whereas others are mutable.
 """
-list_one = [1, 2, 3, 4]
+list_one = [1, 2, 3, 5]
 list_two = list_one
 list_one.append(5)
 print(list_two)
