@@ -130,5 +130,19 @@ calc_factorial(4)              # 1st call with 4
         # Recursive calls are expensive (inefficient) as they take up a lot of memory and time.
         # Recursive functions are hard to debug.
 """
+"""
+25) logging module * https://pymotw.com/3/logging/index.html#module-logging
+ANS:  The Logging module defines a standard API for reporting errors and status information from applications and libraries. 
+      The key benefit of having the logging API provided by a standard library module is that all python modules can participate in logging,
+      so an application's log can include messages from third-party modules.
+  Logging Componenets :
+      The logging System is made up of four interacting types of objects. 
+      Each module or application that wnats to log uses a Logger instance to add information to the logs.
+      Invoking the logger creates a LogRecord, which is used to hold the information in memoery until it is processed.
+      A Logger may have a number of Handler objects configured to receive and process log records.
+      The Handler uses a Formatter to turn the log records into output messages.
+"""
+# Example : Check th example from C:\Users\tatin\git\Py_Learn\Python_Questions[KK]\Examples.py\Logging.py
 
+     
 
