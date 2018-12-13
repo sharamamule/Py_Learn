@@ -181,3 +181,45 @@ print(copy_str3('p', 3))
 
 """24.Write a Python program to test whether a passed letter is a vowel or not
 """
+
+print ("*"*20+ 'Solution 24:')
+def is_vowel(char):
+    all_vowel = 'aeiou'
+    return char in all_vowel
+print (is_vowel('a'))
+print (is_vowel('z'))
+print (is_vowel ('k'))
+
+"""25.Write a Python program to check whether a specified value is contained in a group of values
+"""
+print ("*"*20+ 'Solution 25:')
+def is_group_member(group_data, n):
+    for value in group_data:
+        if n==value:
+            return True
+    return False
+print(is_group_member([1,2,3,4], 4))
+print (is_group_member([8,9,10,22], 7))
+
+"""26.Write a Python program to create a histogram from a given list of integers
+"""
+print ("*"*20+ 'Solution 26:')
+def histogram(items):
+    for n in items:
+        output = " "
+        times = n
+        while (times > 0):
+            output += '*'
+            times = times -1
+        print(output)
+histogram ([2,3,4,5,6])
+
+"""27.Write a Python program to concatenate all elements in a list into a string and return it.
+"""
+print ("*"*20+ 'Solution 27:')
+def concat_list(list):
+        for item in list:
+            print (str(item), end= ' ')
+
+concat_list(['Sharath', 'is','34', 'years','old'])
+
